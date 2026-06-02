@@ -60,7 +60,7 @@ python3 scripts/scan.py > /tmp/storage_scan.json
 
 **🟢 项必须带 `trash_paths`**（具体可删的绝对路径数组，区别于人类可读的 `path` 展示字段）——这是网页删除按钮的前提，漏了按钮就不出现。
 
-**默认用一键删除模式（`server.py`）打开报告**，因为这个 skill 的核心价值就是网页上能直接清理：
+**默认生成静态只读报告，打开报告**，因为这个 skill 的核心价值就是网页上能直接清理：
 ```bash
 python3 scripts/server.py /tmp/storage_analysis.json   # 自动开浏览器，Ctrl+C 停
 ```
